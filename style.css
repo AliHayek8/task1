@@ -1,0 +1,120 @@
+:root{
+  --bg:#0b1220;
+  --box:#111a2b;
+  --text:#e8eefc;
+  --muted:#9aa7c7;
+  --primary:#38bdf8;
+  --border:#22304a;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+a{color:inherit;text-decoration:none;}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:0 16px;
+}
+
+/* Navbar */
+header{
+  border-bottom:1px solid var(--border);
+  background:rgba(17,26,43,0.7);
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 0;
+  gap:12px;
+}
+.logo{font-weight:bold;color:var(--primary);font-size:20px;}
+.nav-links{list-style:none;display:flex;gap:16px;flex-wrap:wrap;}
+.nav-links a{color:var(--muted);}
+.nav-links a:hover{color:var(--primary);}
+
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:bold;
+}
+.btn-primary{background:var(--primary);color:#000;}
+.btn-outline{border:1px solid var(--primary);color:var(--primary);}
+
+/* Sections */
+.section{padding:50px 0;}
+.title{font-size:28px;margin-bottom:8px;}
+.subtitle{color:var(--muted);margin-bottom:18px;}
+
+/* Hero */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:60px 0;
+}
+.hero p{color:var(--muted);margin:12px 0 18px;}
+.actions{display:flex;gap:10px;flex-wrap:wrap;}
+.avatar{
+  width:200px;height:200px;border-radius:50%;
+  background:linear-gradient(135deg, var(--primary), #7c3aed);
+}
+
+/* Cards */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.card{
+  flex:1 1 280px;
+  background:var(--box);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px;
+}
+.card p{color:var(--muted);}
+.badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#07152a;
+  color:var(--primary);
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+/* Form */
+form{max-width:600px;}
+label{display:block;margin-bottom:10px;}
+input, textarea{
+  width:100%;
+  margin-top:6px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:var(--box);
+  color:var(--text);
+}
+
+/* Footer */
+footer{
+  border-top:1px solid var(--border);
+  padding:18px 0;
+  color:var(--muted);
+  text-align:center;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .hero{flex-direction:column;text-align:center;}
+  .navbar{flex-direction:column;}
+}
