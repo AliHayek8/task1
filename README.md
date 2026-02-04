@@ -21,14 +21,15 @@ No external libraries or frameworks were used.
 
 ##  Project Structure
 
+```text
 portfolio/
-│
-├── index.html # Home page
-├── about.html # About me page
-├── projects.html # Projects showcase
-├── contact.html # Contact form
-├── style.css # Main stylesheet
-└── README.md # Project documentation
+├── index.html        # Home page
+├── about.html        # About me page
+├── projects.html     # Projects showcase
+├── contact.html      # Contact form
+├── style.css         # Main stylesheet
+└── README.md         # Project documentation
+
 
 
 ##  Features
